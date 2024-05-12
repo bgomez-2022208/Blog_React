@@ -1,28 +1,51 @@
 import React from 'react';
 import Logo from "../assets/Logo2.jpg";  
 import { useNavigate } from "react-router-dom";
+import "../pages/HomePage.css"
 
 export const Navbar = () => {
     const navigate = useNavigate();
 
-    const handleNavigateAboutMe = () => {
-        navigate('/my');
+    const handleNavigateAboutInicio = () => {
+        navigate('/init');
     };
-
-    const handleNavigateToWorksPage = () => {
-        navigate('/works');
+    const handleNavigateToContactame = () => {
+        navigate('/contac');
     };
-
+    const handleNavigateToProyectos = () => {
+        navigate('/proyec');
+    };
+    
     const handleNavigateToAddComment = () => {
-        navigate('/add');
+        navigate('/coments');
     };
 
     return (
         <div className="navbar"> 
-            <img src={Logo} alt="Logo" className=".logo" />  
-            <button className='nav-button' onClick={handleNavigateToAddComment}>Browse</button>
-            <button className='nav-button' onClick={handleNavigateAboutMe}>More about me</button>
-            <button className='nav-button' onClick={handleNavigateToWorksPage}>My works</button>
+        <img src={Logo} alt="Logo" className="logo" /> 
+        <div className='button-borders'>
+             
+            <button className='primary-button' onClick={handleNavigateAboutInicio}>Inicio</button>
+        </div>
+
+        <div className='button-borders'>
+             
+        <button className='primary-button' onClick={handleNavigateToContactame}>Contactame</button>
+        </div>
+
+        <div className='button-borders'>
+             
+        <button className='primary-button' onClick={handleNavigateToProyectos}>Proyectos</button>
+        </div>
+
+        <div className='button-borders'>
+             
+        <button className='primary-button' onClick={handleNavigateToAddComment}>Comentarios</button>
+        </div>
+           
+            
+            
+            
         </div>
     );
 }
