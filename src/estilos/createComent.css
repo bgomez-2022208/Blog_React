@@ -1,0 +1,67 @@
+/* Estilo general del contenedor del formulario */
+.add-comment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Un fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px;
+}
+
+/* Estilo del formulario de comentarios */
+.add-comment-form {
+    width: 100%; /* Ancho completo dentro del contenedor */
+    max-width: 500px; /* Ancho máximo para evitar formularios demasiado anchos */
+}
+
+/* Estilo para los campos de entrada */
+.input-field {
+    width: 100%; /* Aprovecha todo el ancho disponible */
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo del contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los botones uniformemente */
+    margin-top: 20px; /* Espacio antes de los botones */
+}
+
+/* Estilo para los botones */
+.add-comment-bt, .cancel-comment-bt {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.add-comment-bt {
+    background-color: #007bff; /* Azul para el botón de añadir comentario */
+    color: white;
+}
+
+.add-comment-bt:disabled {
+    background-color: #ccc; /* Gris cuando el botón está deshabilitado */
+    cursor: not-allowed;
+}
+
+.cancel-comment-bt {
+    background-color: #dc3545; /* Rojo para el botón de cancelar */
+    color: white;
+}
+
+.add-comment-bt:hover {
+    background-color: #0056b3; /* Azul oscuro al pasar el mouse */
+}
+
+.cancel-comment-bt:hover {
+    background-color: #c82333; /* Rojo oscuro al pasar el mouse */
+}
