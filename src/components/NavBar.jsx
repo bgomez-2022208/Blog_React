@@ -10,7 +10,7 @@ export const Navbar = () => {
         navigate('/init');
     };
     const handleNavigateToContactame = () => {
-        navigate('/contac');
+        navigate('/lenguajes');
     };
     const handleNavigateToProyectos = () => {
         navigate('/proyec');
@@ -30,7 +30,7 @@ export const Navbar = () => {
 
         <div className='button-borders'>
              
-        <button className='primary-button' onClick={handleNavigateToContactame}>Contactame</button>
+        <button className='primary-button' onClick={handleNavigateToContactame}>Lenguajes</button>
         </div>
 
         <div className='button-borders'>

@@ -1,18 +1,30 @@
 
 import {useState, useEfect} from "react";
 import { Navbar } from "../components/NavBar";
-import "../pages/HomePage.css"
+import {Content} from "../components/content"
+import { Card } from "../components/card"
+import "../pages/HomePage.css";
 
 
 export const HomePage = () => {
 
-    const [showAddTask] = useState(false)
+    const [show] = useState(false)
 
     return(
         <div className="body">
-            {!showAddTask && (
+            {!show && (
                 <Navbar /> 
+                
             )}
+            {!show && (
+                <Content /> 
+                
+            )}
+            {!show && (
+                <Card /> 
+                
+            )}
+          
         </div>
     )
 }
