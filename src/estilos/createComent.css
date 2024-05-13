@@ -1,38 +1,33 @@
-/* Estilo general del contenedor del formulario */
 .add-comment-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f8f9fa; /* Un fondo claro */
+    background-color: #f8f9fa; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 20px;
 }
 
-/* Estilo del formulario de comentarios */
 .add-comment-form {
-    width: 100%; /* Ancho completo dentro del contenedor */
-    max-width: 500px; /* Ancho máximo para evitar formularios demasiado anchos */
+    width: 100%; 
+    max-width: 500px; 
 }
 
-/* Estilo para los campos de entrada */
 .input-field {
-    width: 100%; /* Aprovecha todo el ancho disponible */
+    width: 100%; 
     padding: 10px;
-    margin-bottom: 10px; /* Espacio entre campos */
-    border: 1px solid #ccc; /* Borde sutil */
-    border-radius: 4px; /* Bordes redondeados */
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
 }
 
-/* Estilo del contenedor de botones */
 .button-container {
     display: flex;
-    justify-content: space-between; /* Espacia los botones uniformemente */
-    margin-top: 20px; /* Espacio antes de los botones */
+    justify-content: space-between; 
+    margin-top: 20px;
 }
 
-/* Estilo para los botones */
 .add-comment-bt, .cancel-comment-bt {
     padding: 10px 20px;
     border: none;
@@ -44,24 +39,24 @@
 }
 
 .add-comment-bt {
-    background-color: #007bff; /* Azul para el botón de añadir comentario */
+    background-color: #007bff; 
     color: white;
 }
 
 .add-comment-bt:disabled {
-    background-color: #ccc; /* Gris cuando el botón está deshabilitado */
+    background-color: #ccc; 
     cursor: not-allowed;
 }
 
 .cancel-comment-bt {
-    background-color: #dc3545; /* Rojo para el botón de cancelar */
+    background-color: #dc3545; 
     color: white;
 }
 
 .add-comment-bt:hover {
-    background-color: #0056b3; /* Azul oscuro al pasar el mouse */
+    background-color: #0056b3; 
 }
 
 .cancel-comment-bt:hover {
-    background-color: #c82333; /* Rojo oscuro al pasar el mouse */
+    background-color: #c82333; /
 }
