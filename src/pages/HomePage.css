@@ -1,15 +1,16 @@
 body {
+    font-family: 'Times New Roman';
     min-height: 100vh;
     background-color: #570506;
     background-image: linear-gradient(225deg, #570506 0%, #cc2426 33%, #ad5967 66%, #342f2f 100%);
-    font-family: sans-serif;
+    margin: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #000;
 }
 
@@ -36,7 +37,6 @@ body {
 
 .primary-button {
     font-family: 'Ropa Sans', sans-serif;
-       /* font-family: 'Valorant', sans-serif; */
     color: white;
     cursor: pointer;
     font-size: 13px;

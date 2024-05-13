@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../assets/Logo2.jpg";  
+import Logo from "../assets/Logo2.jpg";
 import { useNavigate } from "react-router-dom";
 import "../pages/HomePage.css"
 
@@ -10,42 +10,45 @@ export const Navbar = () => {
         navigate('/init');
     };
     const handleNavigateToContactame = () => {
-        navigate('/lenguajes');
+        navigate('./lenguajes');
     };
     const handleNavigateToProyectos = () => {
         navigate('/proyec');
+
     };
-    
+
     const handleNavigateToAddComment = () => {
         navigate('/coments');
     };
 
     return (
-        <div className="navbar"> 
-        <img src={Logo} alt="Logo" className="logo" /> 
-        <div className='button-borders'>
-             
-            <button className='primary-button' onClick={handleNavigateAboutInicio}>Inicio</button>
-        </div>
+        <div className="navbar">
+            <img src={Logo} alt="Logo" className="logo" />
+            <div className='button-borders'>
 
-        <div className='button-borders'>
-             
-        <button className='primary-button' onClick={handleNavigateToContactame}>Lenguajes</button>
-        </div>
+                <button className='primary-button' onClick={handleNavigateAboutInicio}>Inicio</button>
 
-        <div className='button-borders'>
-             
-        <button className='primary-button' onClick={handleNavigateToProyectos}>Proyectos</button>
-        </div>
 
-        <div className='button-borders'>
-             
-        <button className='primary-button' onClick={handleNavigateToAddComment}>Comentarios</button>
-        </div>
-           
-            
-            
-            
+            </div>
+
+            <div className='button-borders'>
+
+                <button className='primary-button' onClick={handleNavigateToContactame}>Lenguajes</button>
+            </div>
+
+            <div className='button-borders'>
+
+                <button className='primary-button' onClick={handleNavigateToProyectos}>Proyectos</button>
+            </div>
+
+            <div className='button-borders'>
+
+                <button className='primary-button' onClick={handleNavigateToAddComment}>Comentarios</button>
+            </div>
+
+
+
+
         </div>
     );
 }

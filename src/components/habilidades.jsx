@@ -1,4 +1,3 @@
-// CardContainer.jsx
 import React from 'react';
 import Mongo from "../assets/mongodb.png";  
 import Mysql from "../assets/mysql.png";
