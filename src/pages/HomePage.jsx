@@ -3,6 +3,8 @@ import {useState, useEfect} from "react";
 import { Navbar } from "../components/NavBar";
 import {Content} from "../components/content"
 import { Card } from "../components/card"
+import { Proyect } from "../components/proyects"
+
 import "../pages/HomePage.css";
 
 
@@ -22,6 +24,10 @@ export const HomePage = () => {
             )}
             {!show && (
                 <Card /> 
+                
+            )}
+             {!show && (
+                <Proyect /> 
                 
             )}
           
