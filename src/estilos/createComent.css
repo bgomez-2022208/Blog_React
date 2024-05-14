@@ -2,61 +2,80 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     padding: 20px;
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .add-comment-form {
-    width: 100%; 
-    max-width: 500px; 
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .input-field {
-    width: 100%; 
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .button-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-top: 20px;
 }
 
 .add-comment-bt, .cancel-comment-bt {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-}
-
-.add-comment-bt {
-    background-color: #007bff; 
+    font-size: 16px;
+    background-color: #007bff;
     color: white;
-}
-
-.add-comment-bt:disabled {
-    background-color: #ccc; 
-    cursor: not-allowed;
+    outline: none;
 }
 
 .cancel-comment-bt {
-    background-color: #dc3545; 
-    color: white;
+    background-color: #dc3545;
 }
 
 .add-comment-bt:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
 
 .cancel-comment-bt:hover {
-    background-color: #c82333; /
+    background-color: #c82333;
+}
+
+.container-input{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 30vw;
+}
+
+.field{
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    color: #929191;
+    background-color: white;
+    padding: 0 5px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.container-input:focus-within label {
+    top: 0;
+    font-size: 12px;
 }
