@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {addComment as addTaskRequest } from "../../services/api";
+import {addComment as addTaskRequest } from "../../services/Api";
 import toast from "react-hot-toast";
 
 export const useComment = () => {

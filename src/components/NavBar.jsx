@@ -6,13 +6,13 @@ import "../pages/HomePage.css"
 export const Navbar = () => {
     const navigate = useNavigate();
 
-    const handleNavigateAboutInicio = () => {
-        navigate('/init');
+    const handleInicio = () => {
+        navigate('#init');
     };
-    const handleNavigateToContactame = () => {
-        navigate('./lenguajes');
+    const handleLenguajes = () => {
+        navigate('card');
     };
-    const handleNavigateToProyectos = () => {
+    const handleProyectos = () => {
         navigate('/proyec');
 
     };
@@ -26,19 +26,19 @@ export const Navbar = () => {
             <img src={Logo} alt="Logo" className="logo" />
             <div className='button-borders'>
 
-                <button className='primary-button' onClick={handleNavigateAboutInicio}>Inicio</button>
+                <button className='primary-button' onClick={handleInicio}>Inicio</button>
 
 
             </div>
 
             <div className='button-borders'>
 
-                <button className='primary-button' onClick={handleNavigateToContactame}>Lenguajes</button>
+                <button className='primary-button' onClick={handleLenguajes}>Lenguajes</button>
             </div>
 
             <div className='button-borders'>
 
-                <button className='primary-button' onClick={handleNavigateToProyectos}>Proyectos</button>
+                <button className='primary-button' onClick={handleProyectos}>Proyectos</button>
             </div>
 
             <div className='button-borders'>

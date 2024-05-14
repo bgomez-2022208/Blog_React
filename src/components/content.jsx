@@ -125,7 +125,7 @@ export const Content = () => {
         </span>
         <span class="tooltip9"> </span>
       </div>
-      <div className="containers">
+      <div className="containers" id='init'>
         <div className="title">
           <h1>Soy Brandon Alexander Gomes Escobar</h1>
         </div>

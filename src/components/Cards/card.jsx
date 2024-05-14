@@ -16,7 +16,7 @@ export const Card = () => {
     return (
         <>
          
-        <div class="container" id='./lenguajes'>
+        <div class="container" id='lenguajes'>
         <h1 className="titlest">Lenguajes:</h1>
         <div class="boxs" ><img className="imagenes" src={Mysql} alt="icon"/></div>
         <div class="boxs"><img className="imagenes" src={Mongo} alt="Mongo"/></div>
